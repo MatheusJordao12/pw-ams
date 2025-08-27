@@ -1,0 +1,1 @@
+lista = new Array(10)
