@@ -7,6 +7,7 @@
 </head>
 <body>
     <h1>JavaScript</h1>
+    <!-- <button onclick="Somar()">Clique aqui para chamar a funcão</button> -->
     <script>
         /*
         var idade = 15
@@ -33,18 +34,74 @@
         //     document.write("Não pode")
         // }
 
-        var idade = +prompt("Digite a sua idade: ")
-        if (idade >= 16 && idade < 18){
-            document.write("Pode votar")
+        // var idade = +prompt("Digite a sua idade: ")
+        // if (idade >= 16 && idade < 18){
+        //     document.write("Pode votar")
+        // }
+
+        // else if (idade >= 18){
+        //     document.write("TEM que votar")
+        // }
+
+        // else {
+        //     document.write("Não pode votar")
+        // }
+
+        // for(let i=0; i< 10;i++){
+        //     document.write(`Interação numero ${i} <br>`)
+        // }
+
+        // let i=0
+        // while(i<10){
+        //     document.write(`Interação com while numero ${i}<br>`)
+        //     i++
+        // }
+
+        function Somar(a, b){
+            a = +prompt("Digita um número: ")
+            b = +prompt("Digita um segundo número: ")
+            let soma = a+b
+            alert(soma)
         }
 
-        else if (idade >= 18){
-            document.write("TEM que votar")
+        function Subtrair(a, b){
+            a = +prompt("Digita um número: ")
+            b = +prompt("Digita um segundo número: ")
+            let sub = a-b
+            alert(sub)
         }
 
+        function Dividir(a, b){
+            a = +prompt("Digita um número: ")
+            b = +prompt("Digita um segundo número: ")
+            let sub = a/b
+            alert(sub)
+        }
+
+        function Multi(a, b){
+            a = +prompt("Digita um número: ")
+            b = +prompt("Digita um segundo número: ")
+            let sub = a*b
+            alert(sub)
+        }
+
+        operacao = prompt("Qual operação você deseja fazer? (*, /, +, -)")
+        if (operacao === "+"){
+            Somar()
+        }
+        else if (operacao === "-"){
+            Subtrair()
+        }
+        else if (operacao === "*"){
+            Multi()
+        }
+        else if(operacao === "/"){
+            Dividir()
+        }
         else {
-            document.write("Não pode votar")
+            alert(`Não tem operador para ${operacao}`)
         }
+        
     </script>
 </body>
 </html>
