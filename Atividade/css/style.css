@@ -17,6 +17,7 @@ table {
 }
 
 td {
+    user-select: none;
     cursor: pointer;
     font-size: 50px;
     text-align: center;
@@ -66,7 +67,7 @@ td {
     font-weight: bold;
 }
 
-@keyframes cor {
+/* @keyframes cor {
     0% {
         background-color: white;
         color: rgb(0, 0, 0);
@@ -88,7 +89,7 @@ td {
         background-color: #00aeff;
         color: white;
     }
-}
+} */
 
 td:hover {
     animation: cor 0.5s infinite ease;
